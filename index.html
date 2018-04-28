@@ -1,0 +1,44 @@
+<!Doctype html>
+<html lang="es">
+
+<head>
+<LINK REL=StyleSheet HREF="estilo.css" TYPE="estilos.css/css" MEDIA=screen> 
+<script type="text/javascript">
+var m ="global";
+function muestreMensaje(){
+	m="local";
+	alert(m);
+	
+}
+alert(m);
+muestreMensaje();
+alert(m);
+</script>
+<title>Formulario Libro</title>
+</head>
+<body>
+<h1>Formulario Libro </h1>
+<form action="insertarLibro.jsp">
+<fieldset>
+<legend> Formulario alta Libro </legend>
+<p>
+
+ISBN:
+<input type="text" name="isbn" /><br></br>
+</p>
+<p>
+
+Titulo:
+<input type="text" name="Titulo" /><br></br>
+</P>
+Categoria:
+<input type="text" name="categoria" /><br></br>
+</p>
+<p>
+<input type="button" value="Pulse este boton"
+ onclick="alert('!has pulsado el boton 3!');">
+</p>
+</fieldset>
+</form>
+</body>
+</html>
